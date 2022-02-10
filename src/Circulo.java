@@ -18,6 +18,11 @@ public class Circulo {
         System.out.println("("+ x + "," + y + ")");
     }
 
+    public double distancia(Punto puntoR, Punto puntoC){
+        double resultado = ((puntoR.getX() * puntoR.getX() - puntoR.getY() * puntoR.getY()) + (puntoC.getX() * puntoC.getX() - puntoC.getY() * puntoC.getY()));
+        return Math.sqrt(resultado);
+    }
+
     @Override
     public String toString() {
         return "Circulo{" +
