@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         Punto puntoRectangulo = new Punto(4,3);
+        Punto puntoRectangulo2 = new Punto(9,6);
         Punto puntoCirculo = new Punto(7,2);
         Punto puntoCirculo2 = new Punto(8,12);
 
@@ -24,6 +25,12 @@ public class Main {
             System.out.println("Los circulos  se solapan");
         }else{
             System.out.println("Los circulos no se solapan");
+        }
+
+        if(rectangulo.solapa(puntoRectangulo, puntoRectangulo2)){
+            System.out.println("Los rectangulos se solapan");
+        }else{
+            System.out.println("No se solapan");
         }
 
 

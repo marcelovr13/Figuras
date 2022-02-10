@@ -25,6 +25,19 @@ public class Rectangulo {
         return Math.sqrt(resultado);
     }
 
+    public boolean solapa(Punto R1, Punto R2){
+
+        if((R1.getX() < R2.getX() && R2.getX() > R1.getX()) && (R1.getY() < R2.getY() && R2.getY() > R1.getY())){
+            return true;
+        }else{
+            return false;
+        }
+
+        }
+
+
+
+
     @Override
     public String toString() {
         return "Rectangulo{" +
